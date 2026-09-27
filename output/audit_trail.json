@@ -1,0 +1,160 @@
+[
+  {
+    "time": "2026-09-27T02:03:45.279491+00:00",
+    "tool_name": "search_catalog",
+    "arguments": {
+      "query_preview": "Is medium in stock?",
+      "limit": 8
+    },
+    "stop_reason": "returned_0_matches"
+  },
+  {
+    "time": "2026-09-27T02:03:45.284026+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "stop_reason": "returned_verified_product"
+  },
+  {
+    "time": "2026-09-27T02:03:45.287027+00:00",
+    "tool_name": "get_product_stock",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "stop_reason": "returned_verified_inventory"
+  },
+  {
+    "time": "2026-09-27T02:03:45.290031+00:00",
+    "tool_name": "deterministic_answer",
+    "arguments": {
+      "question_type": "price_or_stock"
+    },
+    "stop_reason": "returned_database_answer"
+  },
+  {
+    "time": "2026-09-27T02:03:59.379056+00:00",
+    "tool_name": "search_catalog",
+    "arguments": {
+      "query_preview": "What is the price?",
+      "limit": 8
+    },
+    "stop_reason": "returned_0_matches"
+  },
+  {
+    "time": "2026-09-27T02:03:59.383573+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "stop_reason": "returned_verified_product"
+  },
+  {
+    "time": "2026-09-27T02:03:59.388611+00:00",
+    "tool_name": "get_product_stock",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "stop_reason": "returned_verified_inventory"
+  },
+  {
+    "time": "2026-09-27T02:03:59.390614+00:00",
+    "tool_name": "deterministic_answer",
+    "arguments": {
+      "question_type": "price_or_stock"
+    },
+    "stop_reason": "returned_database_answer"
+  },
+  {
+    "time": "2026-09-27T02:04:35.477886+00:00",
+    "tool_name": "search_catalog",
+    "arguments": {
+      "query_preview": "Is medium in stock?",
+      "limit": 8
+    },
+    "stop_reason": "returned_0_matches"
+  },
+  {
+    "time": "2026-09-27T02:04:35.482444+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "stop_reason": "returned_verified_product"
+  },
+  {
+    "time": "2026-09-27T02:04:35.486496+00:00",
+    "tool_name": "get_product_stock",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "stop_reason": "returned_verified_inventory"
+  },
+  {
+    "time": "2026-09-27T02:04:35.488495+00:00",
+    "tool_name": "deterministic_answer",
+    "arguments": {
+      "question_type": "price_or_stock"
+    },
+    "stop_reason": "returned_database_answer"
+  },
+  {
+    "time": "2026-09-27T02:11:48.008330+00:00",
+    "tool_name": "search_catalog",
+    "arguments": {
+      "query_preview": "hoodie",
+      "limit": 8
+    },
+    "stop_reason": "returned_8_matches"
+  },
+  {
+    "time": "2026-09-27T02:13:42.539721+00:00",
+    "tool_name": "search_catalog",
+    "arguments": {
+      "query_preview": "Is medium in stock?",
+      "limit": 8
+    },
+    "stop_reason": "returned_0_matches"
+  },
+  {
+    "time": "2026-09-27T02:13:42.543626+00:00",
+    "tool_name": "get_product_details",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "stop_reason": "returned_verified_product"
+  },
+  {
+    "time": "2026-09-27T02:13:42.548031+00:00",
+    "tool_name": "get_product_stock",
+    "arguments": {
+      "product_id": "basic-hoodie-big-yale"
+    },
+    "stop_reason": "returned_verified_inventory"
+  },
+  {
+    "time": "2026-09-27T02:13:42.551032+00:00",
+    "tool_name": "deterministic_answer",
+    "arguments": {
+      "question_type": "price_or_stock"
+    },
+    "stop_reason": "returned_database_answer"
+  },
+  {
+    "time": "2026-09-27T02:13:42.562141+00:00",
+    "tool_name": "search_catalog",
+    "arguments": {
+      "query_preview": "What hoodies do you have?",
+      "limit": 8
+    },
+    "stop_reason": "returned_8_matches"
+  },
+  {
+    "time": "2026-09-27T02:13:44.165457+00:00",
+    "tool_name": "pydanticai_agent",
+    "arguments": {
+      "model": "gpt-5.6-luna"
+    },
+    "stop_reason": "stopped_external_model_unavailable"
+  }
+]

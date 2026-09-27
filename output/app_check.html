@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campus Customs live app check</title>
+  <style>
+    :root{color:#102d52;background:#f8f6f0;font-family:Arial,sans-serif}body{max-width:1120px;margin:0 auto;padding:42px 28px 70px;background:#f8f6f0}header{border-bottom:3px solid #7e2935;padding-bottom:24px;margin-bottom:34px}h1,h2{font-family:Georgia,serif;font-weight:500}h1{font-size:42px;margin:8px 0}h2{font-size:28px;margin:0 0 9px;color:#7e2935}.eyebrow{color:#7e2935;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:bold}section{background:#fffdf8;border:1px solid #ddd8ce;padding:22px;margin:24px 0 30px;box-shadow:0 8px 22px #102d5210}figure{margin:18px 0 0}img{display:block;width:100%;height:auto;border:1px solid #d8d3c8}figcaption{font-size:14px;line-height:1.55;color:#52647a;margin-top:11px}.status{display:inline-block;background:#e5f0e6;color:#35613d;padding:7px 10px;font-size:12px;font-weight:bold}footer{color:#66758a;font-size:13px;line-height:1.6;margin-top:36px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Campus Customs / live application check</div>
+    <h1>Storefront verification</h1>
+    <p>Evidence captured from the running React/Vite storefront at <code>http://127.0.0.1:5174/</code> with FastAPI on port 8000.</p>
+    <span class="status">Three checks captured successfully</span>
+  </header>
+
+  <section>
+    <h2>1. Chat checks inventory honestly</h2>
+    <p>The shopper is viewing the Basic Hoodie Big Yale detail page and asks, “Is medium in stock?” The response shows the database-backed price of <strong>$68.00</strong> and the exact size-M quantity of <strong>5 available</strong>.</p>
+    <figure>
+      <img src="app_check_images/inventory-chat.png" alt="Campus Customs Basic Hoodie detail page with chat response showing medium stock and price">
+      <figcaption>Inventory check: the product detail, size grid, and stylist response agree on the product, price, and medium quantity.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>2. Category question creates dynamic result cards</h2>
+    <p>The shopper asks, “What hoodies do you have?” The chat displays eight catalogue matches with product images, names, garment types, prices, stock labels, and save controls.</p>
+    <figure>
+      <img src="app_check_images/hoodie-results.png" alt="Campus Customs chat panel showing eight hoodie catalogue result cards">
+      <figcaption>Dynamic search check: the response becomes a scrollable catalogue-match strip inside the live chat panel.</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>3. Frontend usability: product discovery filters</h2>
+    <p>The Products page exposes garment, color, sport/college, size, availability, price, saved-only, and sorting controls above the 102-piece catalogue. This lets a shopper narrow the collection before opening a product detail page.</p>
+    <figure>
+      <img src="app_check_images/filters.png" alt="Campus Customs Products page with the refinement panel and product catalogue">
+      <figcaption>Discovery check: the live Products page presents the refinement panel and the catalogue together, with visible count, images, prices, and product cards.</figcaption>
+    </figure>
+  </section>
+
+  <footer><strong>How to reproduce:</strong> start FastAPI from <code>hw-4/backend</code> with <code>uvicorn main:app --reload --port 8000</code>, start Vite from <code>hw-4/frontend</code> with <code>npm run dev</code>, then open the Vite URL. The screenshots are static evidence for convenient grading; the underlying checks were performed against the live local app.</footer>
+</body>
+</html>
